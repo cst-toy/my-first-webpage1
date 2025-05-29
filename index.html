@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>私の最初のホームページ</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/liFhVnS4g9d4/aM/g2yPzP0N5j5s2G3M2b6n+2R4d7y0XqJ5v1a1d1X9y5/d4j3Q2d2u1f3V7eP7Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
             background-color: #a22041; /* 深紅 */
@@ -41,13 +40,15 @@
             margin-bottom: 8px;
             padding: 8px 15px;
             border-radius: 5px; /* 角を丸くする */
-            display: flex; /* アイコンとテキストを横並びにする */
+            display: flex; /* 画像とテキストを横並びにする */
             align-items: center; /* 垂直方向に中央揃え */
         }
-        li i { /* Font Awesomeアイコンのスタイル */
-            font-size: 1.5em; /* アイコンのサイズ */
-            margin-right: 10px; /* アイコンとテキストの間のスペース */
-            color: #f0f0f0; /* アイコンの色 */
+        li img {
+            width: 50px; /* 画像の幅 */
+            height: 50px; /* 画像の高さ */
+            margin-right: 10px; /* 画像とテキストの間のスペース */
+            border-radius: 5px; /* 画像の角を丸くする */
+            object-fit: contain; /* 画像がliの範囲内に収まるように調整 */
         }
     </style>
 </head>
@@ -58,9 +59,9 @@
 
     <h2>私の趣味</h2>
     <ul>
-        <li><i class="fas fa-theater-masks"></i> 演劇</li>
-        <li><i class="fas fa-gamepad"></i> FGO</li>
-        <li><i class="fas fa-microphone-alt"></i> ライブ</li>
+        <li><img src="http://googleusercontent.com/image_generation_content/0" alt="演劇のアイコン">演劇</li>
+        <li><img src="http://googleusercontent.com/image_generation_content/1" alt="FGOのアイコン">FGO</li>
+        <li><img src="http://googleusercontent.com/image_generation_content/1" alt="ライブのアイコン">ライブ</li>
     </ul>
 </body>
 </html>
