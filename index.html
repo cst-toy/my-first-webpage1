@@ -7,20 +7,47 @@
     <style>
         body {
             background-color: #a22041; /* 深紅 */
-            color: #f0f0f0; /* 白色 */
-            font-family: Arial, sans-serif;
+            color: #ffffff; /* 白（深紅の画面で見やすい色） */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 少しモダンなフォント */
             margin: 20px;
-            line-height: 1.6;
+            padding: 20px;
+            line-height: 1.8; /* 行間を広げて読みやすくする */
+            text-align: center; /* 中央寄せ */
         }
         h1 {
-            color: #f0f0f0; /* 深紅に映える明るい色で見出しを目立たせる */
+            color: #f0f0f0; /* 少し柔らかい白で見出しを目立たせる */
+            font-size: 2.8em; /* 見出しを大きくする */
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            color: #f0f0f0;
+            font-size: 1.8em;
+            margin-top: 2em;
+        }
+        p {
+            font-size: 1.2em; /* 段落の文字サイズを大きくする */
+            margin-bottom: 1em;
         }
         ul {
-            list-style-type: none;
+            list-style-type: none; /* リストの点をなくす */
             padding: 0;
+            margin-top: 1em;
+            display: inline-block; /* 中央寄せにするためにブロック要素化 */
+            text-align: left; /* リスト項目は左寄せに戻す */
         }
         li {
-            margin-bottom: 5px;
+            background-color: rgba(255, 255, 255, 0.1); /* 趣味の項目に薄い背景 */
+            margin-bottom: 8px;
+            padding: 8px 15px;
+            border-radius: 5px; /* 角を丸くする */
+            display: flex; /* 画像とテキストを横並びにする */
+            align-items: center; /* 垂直方向に中央揃え */
+        }
+        li img {
+            width: 50px; /* 画像の幅 */
+            height: 50px; /* 画像の高さ */
+            margin-right: 10px; /* 画像とテキストの間のスペース */
+            border-radius: 5px; /* 画像の角を丸くする */
         }
     </style>
 </head>
@@ -28,11 +55,12 @@
     <h1>ようこそ!</h1>
     <p>私の名前は**村上透威**です。</p>
     <p>**理工学部応用情報工学科**で学んでいます。</p>
+
     <h2>私の趣味</h2>
     <ul>
-        <li>演劇</li>
-        <li>FGO</li>
-        <li>ライブ</li>
+        <li><img src="https://icooon-mono.com/wp-content/uploads/2016/08/theater.png" alt="演劇の画像">演劇</li>
+        <li><img src="https://booth.pm/images/items/1383855/e112d77d-c472-4734-9366-0a604752c159/0x0.jpg" alt="FGOの画像">FGO</li>
+        <li><img src="https://www.photo-ac.com/main/search/prefix/jpeg/4221703.jpg" alt="ライブの画像">ライブ</li>
     </ul>
 </body>
 </html>
